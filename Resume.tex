@@ -74,6 +74,10 @@
 \newcommand{\resumeItemListStart}{\begin{itemize}}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
 
+% Language Typeset
+\def\CPlusPlus{{C\nolinebreak[4]\hspace{-.05em}\raisebox{.4ex}{\tiny\bf ++}}}
+\def\CSharp{{C\nolinebreak[4]\hspace{-.05em}\raisebox{.4ex}{\tiny\bf \#}}}
+
 %-------------------------------------------
 %%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -100,7 +104,7 @@
 \section{Education}
   \resumeSubHeadingListStart
     \resumeEducationSubheading
-      {University of California}{Santa Cruz, CA}
+      {University of California, Santa Cruz}{Santa Cruz, CA}
       {M.S. Computer Science;  GPA: 4.0/4.0}{09/2017 -- 06/2018}
 
     \vspace{-4pt}
@@ -123,10 +127,10 @@
           Ensured on-schedule and high-quality delivery of the end results according to both project and engineering requirements through 
           comprehensive architectural design, test-driven implementation, and code review.}
         \resumeItem 
-          {Led the technical debt effort to migrate legacy implementation to a new internal UI component framework. Modularized the 
-          existing team code base for improved dependency management, test coverage, and build performance.}
+          {Led the technical debt effort to modularize the existing team code base for improved dependency management, test coverage, 
+          and build performance. Also migrated some legacy feature implementation to a new internal UI component framework.}
         \resumeItem
-          {Worked with the iOS principle architects to develop new components, and migrate the legacy color system to a more modern one 
+          {Worked with the iOS principle architects to develop new UI components, and migrate the legacy color system to a more modern one 
           for dark mode adaptibility. Also collaborated closely with the design team to formalize the color system, facilitating both the 
           design and development process.}
       \resumeItemListEnd
@@ -136,26 +140,26 @@
       \resumeItemListStart
         \resumeItem
           {Supervised lab sections for introduction to Java programming. Worked with students with little to no prior programming 
-          experience, and helped introduce them to programming and problem solving through Processing.}
+          experience and helped introduce them to programming and problem solving.}
         \resumeItem
-          {Taught discussion sections for introduction to algorithmic analysis. Responsible for 
-          answering students' online discussion questions regarding homework, class lectures, and exam review.}
+          {Led discussion sections for introduction to algorithmic analysis. Responsible for answering students' online discussion 
+          questions regarding homework, class lectures, and exam review.}
       \resumeItemListEnd
 
       \resumeExperienceSubheading
       {Software Engineer}{SYSEDA}{01/2015 -- 07/2017}
       \resumeItemListStart
         \resumeItem
-          {Worked with a team of 10 developers to port a C\#/Silverlight ship simulation application to Qt for cross-platform deployment. 
+          {Worked with a team of 10 developers to port a \CSharp/Silverlight ship simulation application to Qt for cross-platform deployment. 
           Also implemented missing features to enhance usability and effectiveness in ship design and 
           simulation.}
         \resumeItem
-          {Collaborated with three other developers to port a C\#/Silverlight visualization application to WebGL by experimenting with 
+          {Collaborated with three other developers to port a \CSharp/Silverlight visualization application to WebGL by experimenting with 
           different 3D frameworks including Three.js, Babylon.js, and Unity. Evaluated their feasibility and efficiency in simulating 
           basic features essential for ship design and validation.}
         \resumeItem
-          {Developed, debugged, and maintained a 3D ship design platform using Three.js and web development frameworks including Kendo UI, 
-          Knockout.js, and Bootstrap. Important implemented features include path finding, arcball rotation, transform gizmo, collision 
+          {Developed, debugged, and maintained a 3D ship design platform using Three.js and other web development libraries including Kendo UI, 
+          Knockout.js, and Bootstrap. Implemented important features including path finding, arcball rotation, transform gizmo, collision 
           detection, dynamic mesh generation, and general CRUD.}
       \resumeItemListEnd
 
@@ -164,12 +168,12 @@
       \resumeItemListStart
         \resumeItem
           {Collaborated with a team of designers and developers to improve a modeling and simulation 3D tool, developed in 
-          Unreal Engine 4.10, and provide the product development team with an interactive prototyping environment to validate their 
+          Unreal Engine, and provide the product development team with an interactive prototyping environment to validate their 
           product design.}
         \resumeItem
-          {Developed an I/O feature, written in C++ and Blueprint, that feeds camera data from a CSV file into the 3D tool to validate 
-          and adjust camera arrangement, as well as to visualize each camera’s scene capture. This feature also enables the updated 
-          camera values and the scene captures to be saved for further development.}
+          {Developed an I/O feature, written in {\CPlusPlus} and Blueprint, that feeds camera data from a CSV file into the 3D tool to 
+          validate and adjust camera arrangement, as well as to visualize each camera's scene capture. This feature also enables saving 
+          updated camera values and scene captures for further development.}
       \resumeItemListEnd
 
   \resumeSubHeadingListEnd
@@ -180,7 +184,7 @@
     \resumeSubItem
       {Tetris-SwiftUI:}{Tetris game using Apple newest frameworks, SwiftUI and Combine.} 
     \resumeSubItem
-      {GTLC:}{Intepreter for the gradually-typed lambda calculus using the eager coercion calculus.} 
+      {GTLC:}{Interpreter for the gradually-typed lambda calculus using the eager coercion calculus, implemented in Haskell.} 
     \resumeSubItem
       {Safehouse:}{2-player street view game using Google Maps APIs to simulate the classic cat-and-mouse game.} 
     \resumeSubItem
@@ -191,11 +195,11 @@
 \section{Programming Skills}
  \resumeSubHeadingListStart
     \resumeSubItem
-      {Languages:}{Swift, Objective-C, Java, JavaScript, HTML5, CSS, C++, Python, C} 
+      {Languages:}{Swift, Objective-C, Java, JavaScript, HTML5, CSS, Haskell, \CPlusPlus, C} 
     \resumeSubItem
       {Development Software:}{Xcode, Git, Mac OS, Windows, Unix/Linux, Visual Studio}
     \resumeSubItem
-      {Technologies:}{UIKit, SwiftUI, Combine, Angular 2, Qt 5, jQuery, Knockout.js, Bootstrap, Kendo UI, Firebase}
+      {Technologies:}{UIKit, SwiftUI, Combine, Angular, Three.js, Knockout.js, Bootstrap, Kendo UI, Firebase}
  \resumeSubHeadingListEnd
 
 %-------------------------------------------
