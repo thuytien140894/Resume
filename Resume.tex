@@ -1,0 +1,174 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item \small{#1}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{
+  \item \textbf{#1} \small{#2} \vspace{-4pt}
+}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{http://sourabhbajaj.com/}{\Large Tien Thuy Ho}} & Email: \href{mailto:thuytien140894@gmail.com}{thuytien140894@gmail.com}\\
+  \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile: 803-741-6063 \\
+\end{tabular*}
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of California}{Santa Cruz, CA}
+      {M.S. Computer Science;  GPA: 4.0/4.0}{Sep. 2017 -- Jun. 2018}
+    \resumeSubheading
+      {University of South Carolina, Honors College}{Columbia, SC}
+      {B.S. Computer Science and Mathematics, French Minor;  GPA: 4.0/4.0}{Aug. 2013 -- May 2017}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {eBay}{San Jose, CA}
+      {Software Engineer}{Aug. 2018 - Present}
+      \resumeItemListStart
+        \resumeItem
+          {Supervised lab sections for Introduction to Programming in Java. Worked with students with little to no prior programming experience, and helped introduce them to programming through Processing.}
+        \resumeItem
+          {Taught discussion sections for Introduction to Analysis of Algorithms. Responsible for maintaining the Canvas webpage and answering students' discussion questions regarding homework, class lectures, and exam review.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {University of California}{Santa Cruz, CA}
+      {Graduate Teaching Assistant}{Sep. 2017 - Jun. 2018}
+      \resumeItemListStart
+        \resumeItem
+          {Supervised lab sections for Introduction to Programming in Java. Worked with students with little to no prior programming experience, and helped introduce them to programming through Processing.}
+        \resumeItem
+          {Taught discussion sections for Introduction to Analysis of Algorithms. Responsible for maintaining the Canvas webpage and answering students' discussion questions regarding homework, class lectures, and exam review.}
+      \resumeItemListEnd
+
+      \resumeSubheading
+      {SYSEDA}{Columbia, SC}
+      {Software Engineer}{Jan. 2015 - Jul. 2017}
+      \resumeItemListStart
+        \resumeItem
+          {Worked with a team of 10 developers to port a C\#/Silverlight ship simulation application to Qt for cross-platform deployment. This application allows engineers to collaborate on the validation of ship components in a 2D environment, ensuring their design accuracy and cost effectiveness.}
+        \resumeItem
+          {Analyzed, refactored, and debugged the existing code base written with Qt and C++. Implemented missing features to enhance usability and effectiveness in ship design and simulation.}
+        \resumeItem
+          {Collaborated with three other developers to port a C\#/Silverlight visualization application to WebGL by experimenting with different 3D frameworks including Three.js, Babylon.js, and Unity. Evaluated their feasibility and efficiency in simulating basic features essential for ship design and validation.}
+        \resumeItem
+          {Developed, debugged, and maintained a 3D design platform using Three.js and web development frameworks including Kendo UI, Knockout.js, and Bootstrap.  The tool allows users to load and manipulate models through the 3D environment and its graphical user interface. Important implemented features include path finding, arcball rotation, transform gizmo, collision detection, dynamic mesh generation, and general CRUD.}
+      \resumeItemListEnd
+
+      \resumeSubheading
+      {Apple}{Santa Clara, CA}
+      {Software Engineering Intern}{May 2016 - Aug. 2016}
+      \resumeItemListStart
+        \resumeItem
+          {Collaborated with a team of designers and developers to improve a modeling and simulation 3D tool, developed in Unreal Engine 4.10, and provide the product development team with an interactive prototyping environment to validate their product design.}
+        \resumeItem
+          {Developed an I/O feature, written in C++ and Blueprint, that feeds camera data from a CSV file into the 3D tool to validate and adjust camera arrangement, as well as to visualize each camera’s scene capture. This feature also enables the updated camera values and the scene captures to be saved for further development.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------------
+\section{PROJECTS}
+  \resumeSubHeadingListStart
+  \resumeSubItem{Tetris-SwiftUI:}{Tetris game using Apple newest frameworks, SwiftUI and Combine.}
+  \resumeSubItem{GTLC:}{Intepreter for the gradually-typed lambda calculus using the eager coercion calculus.}
+  \resumeSubItem{Safehouse:}{2-player street view game using Google Maps APIs to simulate the classic cat-and-mouse game.}
+  \resumeSubItem{fChess:}{Online chess game using 2-D game framework Phaser.}
+  \resumeSubHeadingListEnd
+
+%-----------PROGRAMMING SKILLS-----------------
+% \section{PROGRAMMING SKILLS}
+%   \resumeSubHeadingListStart
+%   \resumeSubItem{Languages}{Swift, Java, Objective-C, JavaScript, HTML5, CSS, Swift, Python, C++, C, C\#}
+%   \resumeSubItem{Development Software}{Xcode, Git, Mac OS, Windows, Unix/Linux, Visual Studio}
+%   \resumeSubItem{Frameworks}{UIKit, SwiftUI, Angular 2, jQuery, Three.js, Knockout.js, Bootstrap, Kendo UI, Firebase}
+%   \resumeSubHeadingListEnd
+
+%
+%--------PROGRAMMING SKILLS------------
+%\section{Programming Skills}
+%  \resumeSubHeadingListStart
+%    \item{
+%      \textbf{Languages}{: Scala, Python, Javascript, C++, SQL, Java}
+%      \hfill
+%      \textbf{Technologies}{: AWS, Play, React, Kafka, GCE}
+%    }
+%  \resumeSubHeadingListEnd
+
+%-------------------------------------------
+\end{document}
