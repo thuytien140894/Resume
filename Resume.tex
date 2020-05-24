@@ -47,7 +47,7 @@
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
       \textbf{#1} & #2 \\
       \textit{\small#3} & \textit{\small #4} \\
-    \end{tabular*}\vspace{-5pt}
+    \end{tabular*}
 }
 
 \newcommand{\resumeExperienceSubheading}[3]{
@@ -92,7 +92,8 @@
   >{\centering\arraybackslash}X 
   >{\raggedleft\arraybackslash}X }
  (803) 741-6063 & 385 River Oaks Pkwy, Apt. 3004 & \href{http://github.com/thuytien140894}github.com/thuytien140894 \\
- \href{mailto:thuytien140894@gmail.com}thuytien140894@gmail.com & San Jose, CA 95134 & \href{http://linkedin.com/in/hotien}linkedin.com/in/hotien
+ \href{mailto:thuytien140894@gmail.com}thuytien140894@gmail.com & San Jose, CA 95134 & 
+ \href{http://linkedin.com/in/hotien}linkedin.com/in/hotien
 \end{tabularx}
 
 %-----------EDUCATION-----------------
@@ -101,6 +102,9 @@
     \resumeEducationSubheading
       {University of California}{Santa Cruz, CA}
       {M.S. Computer Science;  GPA: 4.0/4.0}{Sep. 2017 -- Jun. 2018}
+
+    \vspace{-6pt}
+
     \resumeEducationSubheading
       {University of South Carolina, Honors College}{Columbia, SC}
       {B.S. Computer Science and Mathematics, French Minor;  GPA: 4.0/4.0}{Aug. 2013 -- May 2017}
@@ -110,45 +114,62 @@
 %-----------EXPERIENCE-----------------
 \section{Experience}
   \resumeSubHeadingListStart
-
+  
     \resumeExperienceSubheading
       {Software Engineer}{EBAY}{Aug. 2018 - Present}
       \resumeItemListStart
         \resumeItem
-          {Supervised lab sections for Introduction to Programming in Java. Worked with students with little to no prior programming experience, and helped introduce them to programming through Processing.}
+          {Led the development process of the social registration, package tracking, and local pickup experience on the eBay iOS mobile app. 
+          Ensured on-schedule and high-quality delivery of the end results according to both project and engineering requirements through 
+          comprehensive architectural design, test-driven implementation, and code review.}
+        \resumeItem 
+          {Led the technical debt effort to migrate legacy implementation to a new internal UI component framework. Modularized the 
+          existing team code base for improved dependency management, test coverage, and build performance.}
         \resumeItem
-          {Taught discussion sections for Introduction to Analysis of Algorithms. Responsible for maintaining the Canvas webpage and answering students' discussion questions regarding homework, class lectures, and exam review.}
+          {Worked with the iOS principle architects to develop new components, and migrate the legacy color system to a more modern one 
+          for dark mode adaptibility. Also collaborated closely with the design team to formalize the color system, facilitating both the 
+          design and development process.}
       \resumeItemListEnd
 
     \resumeExperienceSubheading
       {Graduate Teaching Assistant}{University of California}{Sep. 2017 - Jun. 2018}
       \resumeItemListStart
         \resumeItem
-          {Supervised lab sections for Introduction to Programming in Java. Worked with students with little to no prior programming experience, and helped introduce them to programming through Processing.}
+          {Supervised lab sections for introduction to Java programming. Worked with students with little to no prior programming 
+          experience, and helped introduce them to programming and problem solving through Processing.}
         \resumeItem
-          {Taught discussion sections for Introduction to Analysis of Algorithms. Responsible for maintaining the Canvas webpage and answering students' discussion questions regarding homework, class lectures, and exam review.}
+          {Taught discussion sections for introduction to algorithmic analysis. Responsible for 
+          answering students' online discussion questions regarding homework, class lectures, and exam review.}
       \resumeItemListEnd
 
       \resumeExperienceSubheading
       {Software Engineer}{SYSEDA}{Jan. 2015 - Jul. 2017}
       \resumeItemListStart
         \resumeItem
-          {Worked with a team of 10 developers to port a C\#/Silverlight ship simulation application to Qt for cross-platform deployment. This application allows engineers to collaborate on the validation of ship components in a 2D environment, ensuring their design accuracy and cost effectiveness.}
+          {Worked with a team of 10 developers to port a C\#/Silverlight ship simulation application to Qt for cross-platform deployment. 
+          Also implemented missing features to enhance usability and effectiveness in ship design and 
+          simulation.}
         \resumeItem
-          {Analyzed, refactored, and debugged the existing code base written with Qt and C++. Implemented missing features to enhance usability and effectiveness in ship design and simulation.}
+          {Collaborated with three other developers to port a C\#/Silverlight visualization application to WebGL by experimenting with 
+          different 3D frameworks including Three.js, Babylon.js, and Unity. Evaluated their feasibility and efficiency in simulating 
+          basic features essential for ship design and validation.}
         \resumeItem
-          {Collaborated with three other developers to port a C\#/Silverlight visualization application to WebGL by experimenting with different 3D frameworks including Three.js, Babylon.js, and Unity. Evaluated their feasibility and efficiency in simulating basic features essential for ship design and validation.}
-        \resumeItem
-          {Developed, debugged, and maintained a 3D design platform using Three.js and web development frameworks including Kendo UI, Knockout.js, and Bootstrap.  The tool allows users to load and manipulate models through the 3D environment and its graphical user interface. Important implemented features include path finding, arcball rotation, transform gizmo, collision detection, dynamic mesh generation, and general CRUD.}
+          {Developed, debugged, and maintained a 3D ship design platform using Three.js and web development frameworks including Kendo UI, 
+          Knockout.js, and Bootstrap. Important implemented features include path finding, arcball rotation, transform gizmo, collision 
+          detection, dynamic mesh generation, and general CRUD.}
       \resumeItemListEnd
 
       \resumeExperienceSubheading
       {Software Engineering Intern}{APPLE}{May 2016 - Aug. 2016}
       \resumeItemListStart
         \resumeItem
-          {Collaborated with a team of designers and developers to improve a modeling and simulation 3D tool, developed in Unreal Engine 4.10, and provide the product development team with an interactive prototyping environment to validate their product design.}
+          {Collaborated with a team of designers and developers to improve a modeling and simulation 3D tool, developed in 
+          Unreal Engine 4.10, and provide the product development team with an interactive prototyping environment to validate their 
+          product design.}
         \resumeItem
-          {Developed an I/O feature, written in C++ and Blueprint, that feeds camera data from a CSV file into the 3D tool to validate and adjust camera arrangement, as well as to visualize each camera’s scene capture. This feature also enables the updated camera values and the scene captures to be saved for further development.}
+          {Developed an I/O feature, written in C++ and Blueprint, that feeds camera data from a CSV file into the 3D tool to validate 
+          and adjust camera arrangement, as well as to visualize each camera’s scene capture. This feature also enables the updated 
+          camera values and the scene captures to be saved for further development.}
       \resumeItemListEnd
 
   \resumeSubHeadingListEnd
@@ -163,7 +184,7 @@
     \resumeSubItem
       {Safehouse:}{2-player street view game using Google Maps APIs to simulate the classic cat-and-mouse game.} 
     \resumeSubItem
-      {fChess:}{Online chess game using 2-D game framework Phaser.}
+      {fChess:}{Online chess game using 2D game framework Phaser.}
   \resumeSubHeadingListEnd
 
 %--------PROGRAMMING SKILLS------------
@@ -172,9 +193,9 @@
     \resumeSubItem
       {Languages:}{Swift, Objective-C, Java, JavaScript, HTML5, CSS, C++, Python, C} 
     \resumeSubItem
-      {Development Software:}{XCode, Git, Mac OS, Windows, Unix/Linux, Visual Studio}
+      {Development Software:}{Xcode, Git, Mac OS, Windows, Unix/Linux, Visual Studio}
     \resumeSubItem
-      {Technologies}{: UIKit, SwiftUI, Combine, Angular 2, Qt 5, jQuery, Knockout.js, Bootstrap, Kendo UI, Firebase}
+      {Technologies:}{UIKit, SwiftUI, Combine, Angular 2, Qt 5, jQuery, Knockout.js, Bootstrap, Kendo UI, Firebase}
  \resumeSubHeadingListEnd
 
 %-------------------------------------------
