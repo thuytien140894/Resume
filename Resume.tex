@@ -42,11 +42,18 @@
   \item \small{#1}
 }
 
-\newcommand{\resumeSubheading}[4]{
+\newcommand{\resumeEducationSubheading}[4]{
   \vspace{-1pt}\item
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
       \textbf{#1} & #2 \\
       \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeExperienceSubheading}[3]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\textit{#1}}, \textbf{#2} & \textit{#3} \\
     \end{tabular*}\vspace{-5pt}
 }
 
@@ -57,7 +64,7 @@
 }
 
 \newcommand{\resumeSubItem}[2]{
-  \item \textbf{#1} \small{#2} \vspace{-4pt}
+  \item \textbf{#1} \small{#2} \vspace{-6pt}
 }
 
 \renewcommand{\labelitemii}{$\circ$}
@@ -74,19 +81,27 @@
 \begin{document}
 
 %----------HEADING-----------------
-\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-  \textbf{\href{http://sourabhbajaj.com/}{\Large Tien Thuy Ho}} & Email: \href{mailto:thuytien140894@gmail.com}{thuytien140894@gmail.com}\\
-  \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile: 803-741-6063 \\
-\end{tabular*}
+\begin{center}
+  \textbf{\LARGE Tien Thuy Ho}
+\end{center}
 
+\vspace{-4pt}
+
+\begin{tabularx}{\textwidth} { 
+  >{\raggedright\arraybackslash}X 
+  >{\centering\arraybackslash}X 
+  >{\raggedleft\arraybackslash}X }
+ (803) 741-6063 & 385 River Oaks Pkwy, Apt. 3004 & \href{http://github.com/thuytien140894}github.com/thuytien140894 \\
+ \href{mailto:thuytien140894@gmail.com}thuytien140894@gmail.com & San Jose, CA 95134 & \href{http://linkedin.com/in/hotien}linkedin.com/in/hotien
+\end{tabularx}
 
 %-----------EDUCATION-----------------
 \section{Education}
   \resumeSubHeadingListStart
-    \resumeSubheading
+    \resumeEducationSubheading
       {University of California}{Santa Cruz, CA}
       {M.S. Computer Science;  GPA: 4.0/4.0}{Sep. 2017 -- Jun. 2018}
-    \resumeSubheading
+    \resumeEducationSubheading
       {University of South Carolina, Honors College}{Columbia, SC}
       {B.S. Computer Science and Mathematics, French Minor;  GPA: 4.0/4.0}{Aug. 2013 -- May 2017}
   \resumeSubHeadingListEnd
@@ -96,9 +111,8 @@
 \section{Experience}
   \resumeSubHeadingListStart
 
-    \resumeSubheading
-      {eBay}{San Jose, CA}
-      {Software Engineer}{Aug. 2018 - Present}
+    \resumeExperienceSubheading
+      {Software Engineer}{EBAY}{Aug. 2018 - Present}
       \resumeItemListStart
         \resumeItem
           {Supervised lab sections for Introduction to Programming in Java. Worked with students with little to no prior programming experience, and helped introduce them to programming through Processing.}
@@ -106,9 +120,8 @@
           {Taught discussion sections for Introduction to Analysis of Algorithms. Responsible for maintaining the Canvas webpage and answering students' discussion questions regarding homework, class lectures, and exam review.}
       \resumeItemListEnd
 
-    \resumeSubheading
-      {University of California}{Santa Cruz, CA}
-      {Graduate Teaching Assistant}{Sep. 2017 - Jun. 2018}
+    \resumeExperienceSubheading
+      {Graduate Teaching Assistant}{University of California}{Sep. 2017 - Jun. 2018}
       \resumeItemListStart
         \resumeItem
           {Supervised lab sections for Introduction to Programming in Java. Worked with students with little to no prior programming experience, and helped introduce them to programming through Processing.}
@@ -116,9 +129,8 @@
           {Taught discussion sections for Introduction to Analysis of Algorithms. Responsible for maintaining the Canvas webpage and answering students' discussion questions regarding homework, class lectures, and exam review.}
       \resumeItemListEnd
 
-      \resumeSubheading
-      {SYSEDA}{Columbia, SC}
-      {Software Engineer}{Jan. 2015 - Jul. 2017}
+      \resumeExperienceSubheading
+      {Software Engineer}{SYSEDA}{Jan. 2015 - Jul. 2017}
       \resumeItemListStart
         \resumeItem
           {Worked with a team of 10 developers to port a C\#/Silverlight ship simulation application to Qt for cross-platform deployment. This application allows engineers to collaborate on the validation of ship components in a 2D environment, ensuring their design accuracy and cost effectiveness.}
@@ -130,9 +142,8 @@
           {Developed, debugged, and maintained a 3D design platform using Three.js and web development frameworks including Kendo UI, Knockout.js, and Bootstrap.  The tool allows users to load and manipulate models through the 3D environment and its graphical user interface. Important implemented features include path finding, arcball rotation, transform gizmo, collision detection, dynamic mesh generation, and general CRUD.}
       \resumeItemListEnd
 
-      \resumeSubheading
-      {Apple}{Santa Clara, CA}
-      {Software Engineering Intern}{May 2016 - Aug. 2016}
+      \resumeExperienceSubheading
+      {Software Engineering Intern}{APPLE}{May 2016 - Aug. 2016}
       \resumeItemListStart
         \resumeItem
           {Collaborated with a team of designers and developers to improve a modeling and simulation 3D tool, developed in Unreal Engine 4.10, and provide the product development team with an interactive prototyping environment to validate their product design.}
@@ -143,32 +154,28 @@
   \resumeSubHeadingListEnd
 
 %-----------PROJECTS-----------------
-\section{PROJECTS}
+\section{Projects}
   \resumeSubHeadingListStart
-  \resumeSubItem{Tetris-SwiftUI:}{Tetris game using Apple newest frameworks, SwiftUI and Combine.}
-  \resumeSubItem{GTLC:}{Intepreter for the gradually-typed lambda calculus using the eager coercion calculus.}
-  \resumeSubItem{Safehouse:}{2-player street view game using Google Maps APIs to simulate the classic cat-and-mouse game.}
-  \resumeSubItem{fChess:}{Online chess game using 2-D game framework Phaser.}
+    \resumeSubItem
+      {Tetris-SwiftUI:}{Tetris game using Apple newest frameworks, SwiftUI and Combine.} 
+    \resumeSubItem
+      {GTLC:}{Intepreter for the gradually-typed lambda calculus using the eager coercion calculus.} 
+    \resumeSubItem
+      {Safehouse:}{2-player street view game using Google Maps APIs to simulate the classic cat-and-mouse game.} 
+    \resumeSubItem
+      {fChess:}{Online chess game using 2-D game framework Phaser.}
   \resumeSubHeadingListEnd
 
-%-----------PROGRAMMING SKILLS-----------------
-% \section{PROGRAMMING SKILLS}
-%   \resumeSubHeadingListStart
-%   \resumeSubItem{Languages}{Swift, Java, Objective-C, JavaScript, HTML5, CSS, Swift, Python, C++, C, C\#}
-%   \resumeSubItem{Development Software}{Xcode, Git, Mac OS, Windows, Unix/Linux, Visual Studio}
-%   \resumeSubItem{Frameworks}{UIKit, SwiftUI, Angular 2, jQuery, Three.js, Knockout.js, Bootstrap, Kendo UI, Firebase}
-%   \resumeSubHeadingListEnd
-
-%
 %--------PROGRAMMING SKILLS------------
-%\section{Programming Skills}
-%  \resumeSubHeadingListStart
-%    \item{
-%      \textbf{Languages}{: Scala, Python, Javascript, C++, SQL, Java}
-%      \hfill
-%      \textbf{Technologies}{: AWS, Play, React, Kafka, GCE}
-%    }
-%  \resumeSubHeadingListEnd
+\section{Programming Skills}
+ \resumeSubHeadingListStart
+    \resumeSubItem
+      {Languages:}{Swift, Objective-C, Java, JavaScript, HTML5, CSS, C++, Python, C} 
+    \resumeSubItem
+      {Development Software:}{XCode, Git, Mac OS, Windows, Unix/Linux, Visual Studio}
+    \resumeSubItem
+      {Technologies}{: UIKit, SwiftUI, Combine, Angular 2, Qt 5, jQuery, Knockout.js, Bootstrap, Kendo UI, Firebase}
+ \resumeSubHeadingListEnd
 
 %-------------------------------------------
 \end{document}
